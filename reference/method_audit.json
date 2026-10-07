@@ -1,0 +1,544 @@
+{
+  "method": {
+    "fingerprint": {
+      "type": "Morgan",
+      "radius": 2,
+      "bits": 2048
+    },
+    "preprocessing": "RDKit Cleanup → FragmentParent → Uncharger → canonical isomeric SMILES",
+    "training_density": "mean Tanimoto similarity to top-5 other training structures",
+    "threshold": "5th percentile of training-density scores",
+    "query_score": "maximum Tanimoto similarity to endpoint training reference",
+    "classification": "In domain when query Tmax >= endpoint threshold; otherwise Out of domain",
+    "prediction_values_changed": false
+  },
+  "prediction_signature_unchanged": true,
+  "query_rows": 607,
+  "tier1_lineage": {
+    "hitcall_rows_available": 9556,
+    "historical_fingerprint_rows": 8968,
+    "historical_invalid_structure_indices": 16,
+    "historical_reference_rows_before_structure_exclusion": 8984,
+    "lineage_assumption": "The first historical_reference_rows entries of the available ToxCast v4.1 hitcall matrix retain the model-training row order; recorded fingerprint drop indices were applied before endpoint label filtering.",
+    "endpoints": {
+      "ER01": {
+        "assay": "NVS_NR_hER",
+        "labeled_rows_after_historical_structure_filter": 1175,
+        "reconstructed_model_fit_rows": 940,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 922
+      },
+      "ER02": {
+        "assay": "OT_ER_ERaERb_0480",
+        "labeled_rows_after_historical_structure_filter": 1855,
+        "reconstructed_model_fit_rows": 1484,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 1441
+      },
+      "ER03": {
+        "assay": "OT_ER_ERbERb_0480",
+        "labeled_rows_after_historical_structure_filter": 1855,
+        "reconstructed_model_fit_rows": 1484,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 1441
+      },
+      "ER04": {
+        "assay": "ATG_ERE_CIS",
+        "labeled_rows_after_historical_structure_filter": 3956,
+        "reconstructed_model_fit_rows": 3164,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 2980
+      },
+      "ER05": {
+        "assay": "ATG_ERa_TRANS",
+        "labeled_rows_after_historical_structure_filter": 3956,
+        "reconstructed_model_fit_rows": 3164,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 2980
+      },
+      "ER06": {
+        "assay": "ATG_hERa_XSP1",
+        "labeled_rows_after_historical_structure_filter": 98,
+        "reconstructed_model_fit_rows": 78,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 77
+      },
+      "ER07": {
+        "assay": "ATG_hERb_XSP1",
+        "labeled_rows_after_historical_structure_filter": 98,
+        "reconstructed_model_fit_rows": 78,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 77
+      },
+      "ER08": {
+        "assay": "ATG_hERb_XSP2",
+        "labeled_rows_after_historical_structure_filter": 191,
+        "reconstructed_model_fit_rows": 152,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 150
+      },
+      "ER09": {
+        "assay": "ATG_hERa_XSP2",
+        "labeled_rows_after_historical_structure_filter": 191,
+        "reconstructed_model_fit_rows": 152,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 150
+      },
+      "ER10": {
+        "assay": "TOX21_ERa_LUC_VM7_Agonist_10nM_ICI182780",
+        "labeled_rows_after_historical_structure_filter": 7365,
+        "reconstructed_model_fit_rows": 5892,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 5791
+      },
+      "ER11": {
+        "assay": "CCTE_Deisenroth_AIME_96WELL_LUC_Active",
+        "labeled_rows_after_historical_structure_filter": 73,
+        "reconstructed_model_fit_rows": 58,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 57
+      },
+      "ER12": {
+        "assay": "CCTE_Deisenroth_AIME_96WELL_LUC_Inactive",
+        "labeled_rows_after_historical_structure_filter": 73,
+        "reconstructed_model_fit_rows": 58,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 57
+      },
+      "AR01": {
+        "assay": "NVS_NR_hAR",
+        "labeled_rows_after_historical_structure_filter": 304,
+        "reconstructed_model_fit_rows": 243,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 240
+      },
+      "AR02": {
+        "assay": "OT_AR_ARSRC1_0960",
+        "labeled_rows_after_historical_structure_filter": 1855,
+        "reconstructed_model_fit_rows": 1484,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 1441
+      },
+      "AR03": {
+        "assay": "ATG_AR_TRANS",
+        "labeled_rows_after_historical_structure_filter": 3956,
+        "reconstructed_model_fit_rows": 3164,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 2980
+      },
+      "AR04": {
+        "assay": "TOX21_AR_LUC_MDAKB2_Agonist",
+        "labeled_rows_after_historical_structure_filter": 7806,
+        "reconstructed_model_fit_rows": 6244,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 6118
+      },
+      "AR05": {
+        "assay": "TOX21_AR_LUC_MDAKB2_Antagonist_0.5nM_R1881",
+        "labeled_rows_after_historical_structure_filter": 7365,
+        "reconstructed_model_fit_rows": 5892,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 5791
+      },
+      "AR06": {
+        "assay": "TOX21_AR_LUC_MDAKB2_Agonist_3uM_Nilutamide",
+        "labeled_rows_after_historical_structure_filter": 7365,
+        "reconstructed_model_fit_rows": 5892,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 5791
+      },
+      "AR07": {
+        "assay": "ACEA_AR_antagonist_80hr",
+        "labeled_rows_after_historical_structure_filter": 1833,
+        "reconstructed_model_fit_rows": 1466,
+        "rows_with_locally_resolved_smiles_before_AD_preprocessing": 1425
+      }
+    }
+  },
+  "non_tier1_sources": {
+    "T2_UTERO": {
+      "source": "/Users/donghyeon/Documents/Codex/2026-08-21/epa-oppts-890-1600-epa-oppts/outputs/ChemBAI_Tier2_models/models/uterotrophic_agonist/best/deployment_bundle.joblib",
+      "bundle_training_smiles": 96
+    },
+    "T2_HERSH": {
+      "source": "/Users/donghyeon/Documents/Codex/2026-08-21/epa-oppts-890-1600-epa-oppts/outputs/ChemBAI_Tier2_models/models/hershberger_antagonist/final/deployment_bundle.joblib",
+      "bundle_training_smiles": 118
+    },
+    "T3_421": {
+      "source": "/Users/donghyeon/Downloads/TG421_RDKitLR_model.joblib",
+      "bundle_training_smiles": 430
+    },
+    "T3_416": {
+      "source": "/Users/donghyeon/Documents/Codex/2026-08-21/epa-oppts-890-1600-epa-oppts/outputs/tg416_model_development/tg416_deployment_model.joblib",
+      "bundle_training_smiles": 95,
+      "extraction_runtime": "/opt/anaconda3/envs/toxenv/bin/python3"
+    },
+    "T3_414": {
+      "source": "/Users/donghyeon/Downloads/tg414.xlsx",
+      "source_smiles_rows": 1330
+    }
+  },
+  "endpoint_results": {
+    "ER01": {
+      "raw_reference_rows": 940,
+      "AD_reference_fingerprints": 922,
+      "preprocessing_rejected": 18,
+      "unique_preprocessed_structures": 898,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.18643007560035424,
+      "density_min": 0.0,
+      "density_median": 0.3844741132044324,
+      "density_max": 0.8800000000000001,
+      "query_tmax_min": 0.043478260869565216,
+      "query_tmax_median": 0.4583333333333333,
+      "query_tmax_max": 1.0
+    },
+    "ER02": {
+      "raw_reference_rows": 1484,
+      "AD_reference_fingerprints": 1439,
+      "preprocessing_rejected": 45,
+      "unique_preprocessed_structures": 1393,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.2048223206151679,
+      "density_min": 0.03818048186035563,
+      "density_median": 0.40799900509886833,
+      "density_max": 1.0,
+      "query_tmax_min": 0.0196078431372549,
+      "query_tmax_median": 0.6071428571428571,
+      "query_tmax_max": 1.0
+    },
+    "ER03": {
+      "raw_reference_rows": 1484,
+      "AD_reference_fingerprints": 1439,
+      "preprocessing_rejected": 45,
+      "unique_preprocessed_structures": 1393,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.2048223206151679,
+      "density_min": 0.03818048186035563,
+      "density_median": 0.40799900509886833,
+      "density_max": 1.0,
+      "query_tmax_min": 0.0196078431372549,
+      "query_tmax_median": 0.6071428571428571,
+      "query_tmax_max": 1.0
+    },
+    "ER04": {
+      "raw_reference_rows": 3164,
+      "AD_reference_fingerprints": 2978,
+      "preprocessing_rejected": 186,
+      "unique_preprocessed_structures": 2873,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.23201830610331128,
+      "density_min": 0.02004310344827586,
+      "density_median": 0.4566045548654244,
+      "density_max": 1.0,
+      "query_tmax_min": 0.06666666666666667,
+      "query_tmax_median": 1.0,
+      "query_tmax_max": 1.0
+    },
+    "ER05": {
+      "raw_reference_rows": 3164,
+      "AD_reference_fingerprints": 2978,
+      "preprocessing_rejected": 186,
+      "unique_preprocessed_structures": 2873,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.23201830610331128,
+      "density_min": 0.02004310344827586,
+      "density_median": 0.4566045548654244,
+      "density_max": 1.0,
+      "query_tmax_min": 0.06666666666666667,
+      "query_tmax_median": 1.0,
+      "query_tmax_max": 1.0
+    },
+    "ER06": {
+      "raw_reference_rows": 78,
+      "AD_reference_fingerprints": 77,
+      "preprocessing_rejected": 1,
+      "unique_preprocessed_structures": 77,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.12932624148992783,
+      "density_min": 0.08959025470653377,
+      "density_median": 0.253105694980695,
+      "density_max": 0.5188512041453218,
+      "query_tmax_min": 0.0,
+      "query_tmax_median": 0.21428571428571427,
+      "query_tmax_max": 1.0
+    },
+    "ER07": {
+      "raw_reference_rows": 78,
+      "AD_reference_fingerprints": 77,
+      "preprocessing_rejected": 1,
+      "unique_preprocessed_structures": 77,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.12932624148992783,
+      "density_min": 0.08959025470653377,
+      "density_median": 0.253105694980695,
+      "density_max": 0.5188512041453218,
+      "query_tmax_min": 0.0,
+      "query_tmax_median": 0.21428571428571427,
+      "query_tmax_max": 1.0
+    },
+    "ER08": {
+      "raw_reference_rows": 152,
+      "AD_reference_fingerprints": 150,
+      "preprocessing_rejected": 2,
+      "unique_preprocessed_structures": 149,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.1476627123242763,
+      "density_min": 0.10667735168642609,
+      "density_median": 0.3384247856230615,
+      "density_max": 0.7282715796345638,
+      "query_tmax_min": 0.0,
+      "query_tmax_median": 0.25,
+      "query_tmax_max": 1.0
+    },
+    "ER09": {
+      "raw_reference_rows": 152,
+      "AD_reference_fingerprints": 150,
+      "preprocessing_rejected": 2,
+      "unique_preprocessed_structures": 149,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.1476627123242763,
+      "density_min": 0.10667735168642609,
+      "density_median": 0.3384247856230615,
+      "density_max": 0.7282715796345638,
+      "query_tmax_min": 0.0,
+      "query_tmax_median": 0.25,
+      "query_tmax_max": 1.0
+    },
+    "ER10": {
+      "raw_reference_rows": 5892,
+      "AD_reference_fingerprints": 5782,
+      "preprocessing_rejected": 110,
+      "unique_preprocessed_structures": 5413,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.26400946019532645,
+      "density_min": 0.036078236279849185,
+      "density_median": 0.47968153067678687,
+      "density_max": 1.0,
+      "query_tmax_min": 0.125,
+      "query_tmax_median": 1.0,
+      "query_tmax_max": 1.0
+    },
+    "ER11": {
+      "raw_reference_rows": 58,
+      "AD_reference_fingerprints": 57,
+      "preprocessing_rejected": 1,
+      "unique_preprocessed_structures": 57,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.17794323642561818,
+      "density_min": 0.09804860968777754,
+      "density_median": 0.3340218134268477,
+      "density_max": 0.581282175032175,
+      "query_tmax_min": 0.0,
+      "query_tmax_median": 0.2222222222222222,
+      "query_tmax_max": 1.0
+    },
+    "ER12": {
+      "raw_reference_rows": 58,
+      "AD_reference_fingerprints": 57,
+      "preprocessing_rejected": 1,
+      "unique_preprocessed_structures": 57,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.17794323642561818,
+      "density_min": 0.09804860968777754,
+      "density_median": 0.3340218134268477,
+      "density_max": 0.581282175032175,
+      "query_tmax_min": 0.0,
+      "query_tmax_median": 0.2222222222222222,
+      "query_tmax_max": 1.0
+    },
+    "AR01": {
+      "raw_reference_rows": 243,
+      "AD_reference_fingerprints": 240,
+      "preprocessing_rejected": 3,
+      "unique_preprocessed_structures": 237,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.16031556980722134,
+      "density_min": 0.008333333333333333,
+      "density_median": 0.29152424544179784,
+      "density_max": 0.6240047021943573,
+      "query_tmax_min": 0.0,
+      "query_tmax_median": 0.30612244897959184,
+      "query_tmax_max": 1.0
+    },
+    "AR02": {
+      "raw_reference_rows": 1484,
+      "AD_reference_fingerprints": 1439,
+      "preprocessing_rejected": 45,
+      "unique_preprocessed_structures": 1393,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.2048223206151679,
+      "density_min": 0.03818048186035563,
+      "density_median": 0.40799900509886833,
+      "density_max": 1.0,
+      "query_tmax_min": 0.0196078431372549,
+      "query_tmax_median": 0.6071428571428571,
+      "query_tmax_max": 1.0
+    },
+    "AR03": {
+      "raw_reference_rows": 3164,
+      "AD_reference_fingerprints": 2978,
+      "preprocessing_rejected": 186,
+      "unique_preprocessed_structures": 2873,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.23201830610331128,
+      "density_min": 0.02004310344827586,
+      "density_median": 0.4566045548654244,
+      "density_max": 1.0,
+      "query_tmax_min": 0.06666666666666667,
+      "query_tmax_median": 1.0,
+      "query_tmax_max": 1.0
+    },
+    "AR04": {
+      "raw_reference_rows": 6244,
+      "AD_reference_fingerprints": 6111,
+      "preprocessing_rejected": 133,
+      "unique_preprocessed_structures": 5685,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.26247665515704566,
+      "density_min": 0.033586541927689714,
+      "density_median": 0.4872781405390101,
+      "density_max": 1.0,
+      "query_tmax_min": 0.125,
+      "query_tmax_median": 1.0,
+      "query_tmax_max": 1.0
+    },
+    "AR05": {
+      "raw_reference_rows": 5892,
+      "AD_reference_fingerprints": 5782,
+      "preprocessing_rejected": 110,
+      "unique_preprocessed_structures": 5413,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.26400946019532645,
+      "density_min": 0.036078236279849185,
+      "density_median": 0.47968153067678687,
+      "density_max": 1.0,
+      "query_tmax_min": 0.125,
+      "query_tmax_median": 1.0,
+      "query_tmax_max": 1.0
+    },
+    "AR06": {
+      "raw_reference_rows": 5892,
+      "AD_reference_fingerprints": 5782,
+      "preprocessing_rejected": 110,
+      "unique_preprocessed_structures": 5413,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.26400946019532645,
+      "density_min": 0.036078236279849185,
+      "density_median": 0.47968153067678687,
+      "density_max": 1.0,
+      "query_tmax_min": 0.125,
+      "query_tmax_median": 1.0,
+      "query_tmax_max": 1.0
+    },
+    "AR07": {
+      "raw_reference_rows": 1466,
+      "AD_reference_fingerprints": 1423,
+      "preprocessing_rejected": 43,
+      "unique_preprocessed_structures": 1378,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.20531460163877044,
+      "density_min": 0.028708791208791207,
+      "density_median": 0.4084921798631476,
+      "density_max": 1.0,
+      "query_tmax_min": 0.02564102564102564,
+      "query_tmax_median": 0.6,
+      "query_tmax_max": 1.0
+    },
+    "T2_UTERO": {
+      "raw_reference_rows": 96,
+      "AD_reference_fingerprints": 96,
+      "preprocessing_rejected": 0,
+      "unique_preprocessed_structures": 96,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.11580430498463284,
+      "density_min": 0.06789682539682539,
+      "density_median": 0.3915428685051708,
+      "density_max": 0.806441570881226,
+      "query_tmax_min": 0.0,
+      "query_tmax_median": 0.23684210526315788,
+      "query_tmax_max": 1.0
+    },
+    "T2_HERSH": {
+      "raw_reference_rows": 118,
+      "AD_reference_fingerprints": 118,
+      "preprocessing_rejected": 0,
+      "unique_preprocessed_structures": 118,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.15645799511264133,
+      "density_min": 0.10000550837009951,
+      "density_median": 0.3014480006717829,
+      "density_max": 0.809857153589405,
+      "query_tmax_min": 0.0,
+      "query_tmax_median": 0.2391304347826087,
+      "query_tmax_max": 1.0
+    },
+    "T3_414": {
+      "raw_reference_rows": 1330,
+      "AD_reference_fingerprints": 1302,
+      "preprocessing_rejected": 28,
+      "unique_preprocessed_structures": 1158,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.19715066330612466,
+      "density_min": 0.0,
+      "density_median": 0.4428185751030579,
+      "density_max": 1.0,
+      "query_tmax_min": 0.125,
+      "query_tmax_median": 0.6153846153846154,
+      "query_tmax_max": 1.0
+    },
+    "T3_421": {
+      "raw_reference_rows": 430,
+      "AD_reference_fingerprints": 430,
+      "preprocessing_rejected": 0,
+      "unique_preprocessed_structures": 430,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.1676228011645513,
+      "density_min": 0.0,
+      "density_median": 0.31834228384100505,
+      "density_max": 1.0,
+      "query_tmax_min": 0.0,
+      "query_tmax_median": 0.4,
+      "query_tmax_max": 1.0
+    },
+    "T3_416": {
+      "raw_reference_rows": 95,
+      "AD_reference_fingerprints": 95,
+      "preprocessing_rejected": 0,
+      "unique_preprocessed_structures": 95,
+      "top_k": 5,
+      "threshold_percentile": 5.0,
+      "threshold": 0.12236843808823755,
+      "density_min": 0.08780360715345234,
+      "density_median": 0.24250223386680334,
+      "density_max": 0.8543333333333333,
+      "query_tmax_min": 0.0,
+      "query_tmax_median": 0.28205128205128205,
+      "query_tmax_max": 1.0
+    }
+  },
+  "counts": {
+    "substances": 607,
+    "endpoints": 24,
+    "matrix_cells": 14568,
+    "observed_cells_preserved": 3627,
+    "provisional_cells_predicted": 38,
+    "predicted_cells": 10941,
+    "predicted_positive": 3117,
+    "predicted_negative": 7824,
+    "doa_values_reported": 10941,
+    "overall_median_doa": 0.3333333333333333,
+    "overall_p25_doa": 0.2222222222222222,
+    "overall_p10_doa": 0.16326530612244897,
+    "overall_minimum_doa": 0.0,
+    "ad_in_domain": 10120,
+    "ad_out_of_domain": 821,
+    "ad_supported": 10120,
+    "low_similarity": 821
+  }
+}
