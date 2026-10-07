@@ -1,0 +1,984 @@
+{
+  "method": {
+    "fingerprint": {
+      "type": "Morgan",
+      "radius": 2,
+      "bits": 2048
+    },
+    "preprocessing": "RDKit Cleanup → FragmentParent → Uncharger → canonical isomeric SMILES",
+    "training_density": "mean Tanimoto similarity to top-5 other training structures",
+    "threshold": "5th percentile of training-density scores",
+    "query_score": "maximum Tanimoto similarity to endpoint training reference",
+    "classification": "In domain when query Tmax >= endpoint threshold; otherwise Out of domain",
+    "prediction_values_changed": false
+  },
+  "lineage": {
+    "hitcall_git_blob_sha": "8e707bed768d2444488ebe57423bf9ca352dfd92",
+    "reference_rows_before_exclusion": 8984,
+    "fingerprint_rows": 8968,
+    "split": "train_test_split(test_size=0.2,shuffle=True,random_state=42), no stratification; same reconstructed lineage as core24",
+    "structure_mapping": "Local DSSTox exports; structures recovered by DTXSID with CAS source preference",
+    "structure_source_files": [
+      {
+        "file": "CCD-Batch-Search_2022-04-22_04_15_36.csv",
+        "added": 47
+      },
+      {
+        "file": "CCD-Batch-Search_2022-06-12_01_53_15.csv",
+        "added": 452
+      },
+      {
+        "file": "CCD-Batch-Search_2025-10-28_01_18_22.csv",
+        "added": 3415
+      },
+      {
+        "file": "CCD-Batch-Search_2025-10-30_08_31_51.csv",
+        "added": 2
+      },
+      {
+        "file": "CCD-Batch-Search_2025-11-14_12_40_22.xlsx",
+        "added": 5843
+      },
+      {
+        "file": "CCD-Batch-Search_2025-11-17_02_52_06.xlsx",
+        "added": 71
+      },
+      {
+        "file": "CCD-Batch-Search_2025-11-18_02_32_36.xlsx",
+        "added": 229
+      },
+      {
+        "file": "CCD-Batch-Search_2026-03-19_03_19_49.xlsx",
+        "added": 3
+      },
+      {
+        "file": "CCD-Batch-Search_2026-04-27_09_02_07.xlsx",
+        "added": 308
+      },
+      {
+        "file": "CCD-Batch-Search_2026-04-27_09_03_05.xlsx",
+        "added": 149
+      },
+      {
+        "file": "CCD-Batch-Search_2026-04-29_02_37_58.xlsx",
+        "added": 5560
+      },
+      {
+        "file": "CCD-Batch-Search_2026-07-29_10_58_20.xlsx",
+        "added": 209
+      },
+      {
+        "file": "CCD-Batch-Search_2026-07-30_12_09_02.xlsx",
+        "added": 482
+      },
+      {
+        "file": "CCD-Batch-Search_2026-08-03_09_41_44.xlsx",
+        "added": 63
+      },
+      {
+        "file": "CCD-Batch-Search_2026-08-11_09_56_36.xlsx",
+        "added": 5
+      },
+      {
+        "file": "CCD-Batch-Search_2026-08-11_11_46_10.xlsx",
+        "added": 671
+      },
+      {
+        "file": "CCD-Batch-Search_2026-08-11_12_26_41.xlsx",
+        "added": 20
+      }
+    ]
+  },
+  "endpoints": {
+    "DART_AEID97": {
+      "assay": "ATG_NRF2_ARE_CIS",
+      "labeled_rows": 3956,
+      "reconstructed_fit_rows": 3164,
+      "AD_reference_fingerprints": 2877,
+      "missing_or_rejected_structures": 287,
+      "unique_preprocessed_structures": 2793,
+      "threshold": 0.23256652438631,
+      "density_median": 0.4537907925407925
+    },
+    "DART_AEID610": {
+      "assay": "NVS_GPCR_bAT2",
+      "labeled_rows": 37,
+      "reconstructed_fit_rows": 29,
+      "AD_reference_fingerprints": 23,
+      "missing_or_rejected_structures": 6,
+      "unique_preprocessed_structures": 23,
+      "threshold": 0.0866806739689175,
+      "density_median": 0.15878080825765367
+    },
+    "DART_AEID443": {
+      "assay": "NVS_ENZ_hFGFR1",
+      "labeled_rows": 175,
+      "reconstructed_fit_rows": 140,
+      "AD_reference_fingerprints": 130,
+      "missing_or_rejected_structures": 10,
+      "unique_preprocessed_structures": 130,
+      "threshold": 0.1278136789878354,
+      "density_median": 0.21231921484295319
+    },
+    "DART_AEID1507": {
+      "assay": "CCTE_Padilla_ZF_144hpf_TERATOSCORE",
+      "labeled_rows": 721,
+      "reconstructed_fit_rows": 576,
+      "AD_reference_fingerprints": 551,
+      "missing_or_rejected_structures": 25,
+      "unique_preprocessed_structures": 544,
+      "threshold": 0.18252024629142133,
+      "density_median": 0.33079347733287795
+    },
+    "DART_AEID1682": {
+      "assay": "STM_H9_CystineISnorm_perc",
+      "labeled_rows": 378,
+      "reconstructed_fit_rows": 302,
+      "AD_reference_fingerprints": 293,
+      "missing_or_rejected_structures": 9,
+      "unique_preprocessed_structures": 292,
+      "threshold": 0.15864379448530003,
+      "density_median": 0.24520167625801426
+    },
+    "DART_AEID1688": {
+      "assay": "STM_H9_OrnithineISnorm_perc",
+      "labeled_rows": 378,
+      "reconstructed_fit_rows": 302,
+      "AD_reference_fingerprints": 293,
+      "missing_or_rejected_structures": 9,
+      "unique_preprocessed_structures": 292,
+      "threshold": 0.15864379448530003,
+      "density_median": 0.24520167625801426
+    },
+    "DART_AEID1690": {
+      "assay": "STM_H9_OrnCyssISnorm_ratio",
+      "labeled_rows": 427,
+      "reconstructed_fit_rows": 341,
+      "AD_reference_fingerprints": 330,
+      "missing_or_rejected_structures": 11,
+      "unique_preprocessed_structures": 329,
+      "threshold": 0.1598381172804848,
+      "density_median": 0.2705523637109443
+    },
+    "DART_AEID3094": {
+      "assay": "CCTE_Deisenroth_DEVTOX_RUES2-GLR_Endo_Sox17",
+      "labeled_rows": 67,
+      "reconstructed_fit_rows": 53,
+      "AD_reference_fingerprints": 49,
+      "missing_or_rejected_structures": 4,
+      "unique_preprocessed_structures": 48,
+      "threshold": 0.11892842229808373,
+      "density_median": 0.19400729988965285
+    },
+    "DART_AEID3095": {
+      "assay": "CCTE_Deisenroth_DEVTOX_RUES2-GLR_Endo_Sox2",
+      "labeled_rows": 67,
+      "reconstructed_fit_rows": 53,
+      "AD_reference_fingerprints": 49,
+      "missing_or_rejected_structures": 4,
+      "unique_preprocessed_structures": 48,
+      "threshold": 0.11892842229808373,
+      "density_median": 0.19400729988965285
+    },
+    "DART_AEID3096": {
+      "assay": "CCTE_Deisenroth_DEVTOX_RUES2-GLR_Endo_Bra",
+      "labeled_rows": 67,
+      "reconstructed_fit_rows": 53,
+      "AD_reference_fingerprints": 49,
+      "missing_or_rejected_structures": 4,
+      "unique_preprocessed_structures": 48,
+      "threshold": 0.11892842229808373,
+      "density_median": 0.19400729988965285
+    },
+    "DART_AEID268": {
+      "assay": "BSK_KF3CT_MMP9",
+      "labeled_rows": 1703,
+      "reconstructed_fit_rows": 1362,
+      "AD_reference_fingerprints": 1306,
+      "missing_or_rejected_structures": 56,
+      "unique_preprocessed_structures": 1287,
+      "threshold": 0.2041674452987909,
+      "density_median": 0.4042775175644028
+    },
+    "DART_AEID274": {
+      "assay": "BSK_KF3CT_TIMP2",
+      "labeled_rows": 1703,
+      "reconstructed_fit_rows": 1362,
+      "AD_reference_fingerprints": 1306,
+      "missing_or_rejected_structures": 56,
+      "unique_preprocessed_structures": 1287,
+      "threshold": 0.2041674452987909,
+      "density_median": 0.4042775175644028
+    },
+    "DART_AEID489": {
+      "assay": "NVS_ENZ_hMMP13",
+      "labeled_rows": 89,
+      "reconstructed_fit_rows": 71,
+      "AD_reference_fingerprints": 64,
+      "missing_or_rejected_structures": 7,
+      "unique_preprocessed_structures": 63,
+      "threshold": 0.09822906008883057,
+      "density_median": 0.19282053274005312
+    },
+    "DART_AEID493": {
+      "assay": "NVS_ENZ_hMMP3",
+      "labeled_rows": 109,
+      "reconstructed_fit_rows": 87,
+      "AD_reference_fingerprints": 80,
+      "missing_or_rejected_structures": 7,
+      "unique_preprocessed_structures": 80,
+      "threshold": 0.11414351776365032,
+      "density_median": 0.1980006293313309
+    },
+    "DART_AEID497": {
+      "assay": "NVS_ENZ_hMMP9",
+      "labeled_rows": 225,
+      "reconstructed_fit_rows": 180,
+      "AD_reference_fingerprints": 171,
+      "missing_or_rejected_structures": 9,
+      "unique_preprocessed_structures": 169,
+      "threshold": 0.14011240574387313,
+      "density_median": 0.24241187384044527
+    },
+    "DART_AEID2869": {
+      "assay": "BSK_BF4T_MMP9",
+      "labeled_rows": 164,
+      "reconstructed_fit_rows": 131,
+      "AD_reference_fingerprints": 131,
+      "missing_or_rejected_structures": 0,
+      "unique_preprocessed_structures": 129,
+      "threshold": 0.27303492106224647,
+      "density_median": 0.6108870967741936
+    },
+    "DART_AEID579": {
+      "assay": "NVS_ENZ_hVEGFR3",
+      "labeled_rows": 91,
+      "reconstructed_fit_rows": 72,
+      "AD_reference_fingerprints": 66,
+      "missing_or_rejected_structures": 6,
+      "unique_preprocessed_structures": 64,
+      "threshold": 0.10997436608649422,
+      "density_median": 0.1806936565971185
+    },
+    "DART_AEID638": {
+      "assay": "NVS_GPCR_hETA",
+      "labeled_rows": 42,
+      "reconstructed_fit_rows": 33,
+      "AD_reference_fingerprints": 31,
+      "missing_or_rejected_structures": 2,
+      "unique_preprocessed_structures": 31,
+      "threshold": 0.0940182292240866,
+      "density_median": 0.16476447543205325
+    },
+    "DART_AEID709": {
+      "assay": "NVS_NR_bPR",
+      "labeled_rows": 195,
+      "reconstructed_fit_rows": 156,
+      "AD_reference_fingerprints": 148,
+      "missing_or_rejected_structures": 8,
+      "unique_preprocessed_structures": 145,
+      "threshold": 0.1425840378840379,
+      "density_median": 0.26988436459546516
+    },
+    "DART_AEID2127": {
+      "assay": "TOX21_PR_BLA_Antagonist_ratio",
+      "labeled_rows": 7365,
+      "reconstructed_fit_rows": 5892,
+      "AD_reference_fingerprints": 5526,
+      "missing_or_rejected_structures": 366,
+      "unique_preprocessed_structures": 5239,
+      "threshold": 0.26504793409526706,
+      "density_median": 0.47650660151921714
+    },
+    "DART_AEID2218": {
+      "assay": "TOX21_PR_BLA_Followup_Agonist_ratio",
+      "labeled_rows": 223,
+      "reconstructed_fit_rows": 178,
+      "AD_reference_fingerprints": 173,
+      "missing_or_rejected_structures": 5,
+      "unique_preprocessed_structures": 170,
+      "threshold": 0.17251254378833245,
+      "density_median": 0.3759292991925891
+    },
+    "DART_AEID2219": {
+      "assay": "TOX21_PR_BLA_Followup_Antagonist_ratio",
+      "labeled_rows": 223,
+      "reconstructed_fit_rows": 178,
+      "AD_reference_fingerprints": 173,
+      "missing_or_rejected_structures": 5,
+      "unique_preprocessed_structures": 170,
+      "threshold": 0.17251254378833245,
+      "density_median": 0.3759292991925891
+    },
+    "DART_AEID2222": {
+      "assay": "TOX21_PR_LUC_Followup_Agonist",
+      "labeled_rows": 223,
+      "reconstructed_fit_rows": 178,
+      "AD_reference_fingerprints": 173,
+      "missing_or_rejected_structures": 5,
+      "unique_preprocessed_structures": 170,
+      "threshold": 0.17251254378833245,
+      "density_median": 0.3759292991925891
+    },
+    "DART_AEID2223": {
+      "assay": "TOX21_PR_LUC_Followup_Antagonist",
+      "labeled_rows": 223,
+      "reconstructed_fit_rows": 178,
+      "AD_reference_fingerprints": 173,
+      "missing_or_rejected_structures": 5,
+      "unique_preprocessed_structures": 170,
+      "threshold": 0.17251254378833245,
+      "density_median": 0.3759292991925891
+    },
+    "DART_AEID723": {
+      "assay": "NVS_NR_hRARa_Agonist",
+      "labeled_rows": 178,
+      "reconstructed_fit_rows": 142,
+      "AD_reference_fingerprints": 132,
+      "missing_or_rejected_structures": 10,
+      "unique_preprocessed_structures": 131,
+      "threshold": 0.13669814967641056,
+      "density_median": 0.23459545587533964
+    },
+    "DART_AEID2952": {
+      "assay": "IUF_NPC5_oligodendrocyte_differentiation_120hr",
+      "labeled_rows": 123,
+      "reconstructed_fit_rows": 98,
+      "AD_reference_fingerprints": 86,
+      "missing_or_rejected_structures": 12,
+      "unique_preprocessed_structures": 85,
+      "threshold": 0.1032437386476355,
+      "density_median": 0.20098716258978036
+    },
+    "DART_AEID2697": {
+      "assay": "UKN2_HCS_IMR90_neural_migration",
+      "labeled_rows": 70,
+      "reconstructed_fit_rows": 56,
+      "AD_reference_fingerprints": 47,
+      "missing_or_rejected_structures": 9,
+      "unique_preprocessed_structures": 47,
+      "threshold": 0.0808880057899629,
+      "density_median": 0.1727760362243121
+    },
+    "DART_AEID1827": {
+      "assay": "ArunA_Migration_hNP",
+      "labeled_rows": 58,
+      "reconstructed_fit_rows": 46,
+      "AD_reference_fingerprints": 44,
+      "missing_or_rejected_structures": 2,
+      "unique_preprocessed_structures": 44,
+      "threshold": 0.1026285698344209,
+      "density_median": 0.1778607254607029
+    },
+    "DART_AEID1829": {
+      "assay": "ArunA_Migration_hNC",
+      "labeled_rows": 58,
+      "reconstructed_fit_rows": 46,
+      "AD_reference_fingerprints": 44,
+      "missing_or_rejected_structures": 2,
+      "unique_preprocessed_structures": 44,
+      "threshold": 0.1026285698344209,
+      "density_median": 0.1778607254607029
+    },
+    "DART_AEID1835": {
+      "assay": "ArunA_NOG_NeuritesPerNeuron",
+      "labeled_rows": 58,
+      "reconstructed_fit_rows": 46,
+      "AD_reference_fingerprints": 44,
+      "missing_or_rejected_structures": 2,
+      "unique_preprocessed_structures": 44,
+      "threshold": 0.1026285698344209,
+      "density_median": 0.1778607254607029
+    },
+    "DART_AEID2545": {
+      "assay": "UKN5_HCS_SBAD2_neurite_outgrowth",
+      "labeled_rows": 71,
+      "reconstructed_fit_rows": 56,
+      "AD_reference_fingerprints": 46,
+      "missing_or_rejected_structures": 10,
+      "unique_preprocessed_structures": 46,
+      "threshold": 0.08410010129888551,
+      "density_median": 0.17219863721208165
+    },
+    "DART_AEID2701": {
+      "assay": "UKN4_HCS_LUHMES_neurite_outgrowth",
+      "labeled_rows": 75,
+      "reconstructed_fit_rows": 60,
+      "AD_reference_fingerprints": 50,
+      "missing_or_rejected_structures": 10,
+      "unique_preprocessed_structures": 49,
+      "threshold": 0.10060362248412517,
+      "density_median": 0.1737898093304069
+    },
+    "DART_AEID2779": {
+      "assay": "CCTE_Mundy_HCI_Cortical_NOG_NeuriteLength",
+      "labeled_rows": 176,
+      "reconstructed_fit_rows": 140,
+      "AD_reference_fingerprints": 123,
+      "missing_or_rejected_structures": 17,
+      "unique_preprocessed_structures": 122,
+      "threshold": 0.10991762834397652,
+      "density_median": 0.22056620209059236
+    },
+    "DART_AEID2784": {
+      "assay": "CCTE_Mundy_HCI_Cortical_Synap&Neur_Matur_NeuriteLength",
+      "labeled_rows": 176,
+      "reconstructed_fit_rows": 140,
+      "AD_reference_fingerprints": 123,
+      "missing_or_rejected_structures": 17,
+      "unique_preprocessed_structures": 122,
+      "threshold": 0.10991762834397652,
+      "density_median": 0.22056620209059236
+    },
+    "DART_AEID2790": {
+      "assay": "CCTE_Mundy_HCI_hN2_NOG_NeuriteCount",
+      "labeled_rows": 81,
+      "reconstructed_fit_rows": 64,
+      "AD_reference_fingerprints": 56,
+      "missing_or_rejected_structures": 8,
+      "unique_preprocessed_structures": 56,
+      "threshold": 0.09767899610356572,
+      "density_median": 0.19637683582249182
+    },
+    "DART_AEID2791": {
+      "assay": "CCTE_Mundy_HCI_hN2_NOG_NeuriteLength",
+      "labeled_rows": 83,
+      "reconstructed_fit_rows": 66,
+      "AD_reference_fingerprints": 58,
+      "missing_or_rejected_structures": 8,
+      "unique_preprocessed_structures": 58,
+      "threshold": 0.10308022178554806,
+      "density_median": 0.19908416821322739
+    },
+    "DART_AEID2792": {
+      "assay": "CCTE_Mundy_HCI_hN2_NOG_NeuronCount",
+      "labeled_rows": 83,
+      "reconstructed_fit_rows": 66,
+      "AD_reference_fingerprints": 58,
+      "missing_or_rejected_structures": 8,
+      "unique_preprocessed_structures": 58,
+      "threshold": 0.10308022178554806,
+      "density_median": 0.19908416821322739
+    },
+    "DART_AEID3167": {
+      "assay": "CCTE_Mundy_HCI_iCellGABA_NOG_NeuronCount",
+      "labeled_rows": 27,
+      "reconstructed_fit_rows": 21,
+      "AD_reference_fingerprints": 21,
+      "missing_or_rejected_structures": 0,
+      "unique_preprocessed_structures": 21,
+      "threshold": 0.2263860277653381,
+      "density_median": 0.26809242131339206
+    },
+    "DART_AEID2782": {
+      "assay": "CCTE_Mundy_HCI_Cortical_Synap&Neur_Matur_CellBodySpotCount",
+      "labeled_rows": 176,
+      "reconstructed_fit_rows": 140,
+      "AD_reference_fingerprints": 123,
+      "missing_or_rejected_structures": 17,
+      "unique_preprocessed_structures": 122,
+      "threshold": 0.10991762834397652,
+      "density_median": 0.22056620209059236
+    },
+    "DART_AEID2786": {
+      "assay": "CCTE_Mundy_HCI_Cortical_Synap&Neur_Matur_NeuriteSpotCountPerNeuron",
+      "labeled_rows": 176,
+      "reconstructed_fit_rows": 140,
+      "AD_reference_fingerprints": 123,
+      "missing_or_rejected_structures": 17,
+      "unique_preprocessed_structures": 122,
+      "threshold": 0.10991762834397652,
+      "density_median": 0.22056620209059236
+    },
+    "DART_AEID2788": {
+      "assay": "CCTE_Mundy_HCI_Cortical_Synap&Neur_Matur_SynapseCount",
+      "labeled_rows": 176,
+      "reconstructed_fit_rows": 140,
+      "AD_reference_fingerprints": 123,
+      "missing_or_rejected_structures": 17,
+      "unique_preprocessed_structures": 122,
+      "threshold": 0.10991762834397652,
+      "density_median": 0.22056620209059236
+    },
+    "DART_AEID2793": {
+      "assay": "CCTE_Mundy_HCI_hNP1_Casp3_7",
+      "labeled_rows": 228,
+      "reconstructed_fit_rows": 182,
+      "AD_reference_fingerprints": 172,
+      "missing_or_rejected_structures": 10,
+      "unique_preprocessed_structures": 168,
+      "threshold": 0.1340422668736727,
+      "density_median": 0.2819933016600474
+    },
+    "DART_AEID2529": {
+      "assay": "CCTE_Shafer_MEA_dev_LDH",
+      "labeled_rows": 395,
+      "reconstructed_fit_rows": 316,
+      "AD_reference_fingerprints": 291,
+      "missing_or_rejected_structures": 25,
+      "unique_preprocessed_structures": 285,
+      "threshold": 0.14994484959820714,
+      "density_median": 0.3052780552780553
+    },
+    "DART_AEID2530": {
+      "assay": "CCTE_Shafer_MEA_dev_AB",
+      "labeled_rows": 395,
+      "reconstructed_fit_rows": 316,
+      "AD_reference_fingerprints": 291,
+      "missing_or_rejected_structures": 25,
+      "unique_preprocessed_structures": 285,
+      "threshold": 0.14994484959820714,
+      "density_median": 0.3052780552780553
+    },
+    "DART_AEID2547": {
+      "assay": "UKN5_HCS_SBAD2_cell_viability",
+      "labeled_rows": 71,
+      "reconstructed_fit_rows": 56,
+      "AD_reference_fingerprints": 46,
+      "missing_or_rejected_structures": 10,
+      "unique_preprocessed_structures": 46,
+      "threshold": 0.08410010129888551,
+      "density_median": 0.17219863721208165
+    },
+    "DART_AEID2699": {
+      "assay": "UKN2_HCS_IMR90_cell_viability",
+      "labeled_rows": 70,
+      "reconstructed_fit_rows": 56,
+      "AD_reference_fingerprints": 47,
+      "missing_or_rejected_structures": 9,
+      "unique_preprocessed_structures": 47,
+      "threshold": 0.0808880057899629,
+      "density_median": 0.1727760362243121
+    },
+    "DART_AEID674": {
+      "assay": "NVS_GPCR_rmMGluR1",
+      "labeled_rows": 34,
+      "reconstructed_fit_rows": 27,
+      "AD_reference_fingerprints": 20,
+      "missing_or_rejected_structures": 7,
+      "unique_preprocessed_structures": 20,
+      "threshold": 0.09120729815357399,
+      "density_median": 0.138508174998064
+    },
+    "DART_AEID601": {
+      "assay": "NVS_ENZ_rMAOAC",
+      "labeled_rows": 189,
+      "reconstructed_fit_rows": 151,
+      "AD_reference_fingerprints": 147,
+      "missing_or_rejected_structures": 4,
+      "unique_preprocessed_structures": 147,
+      "threshold": 0.15111409220894678,
+      "density_median": 0.28695238095238096
+    },
+    "DART_AEID603": {
+      "assay": "NVS_ENZ_rMAOAP",
+      "labeled_rows": 111,
+      "reconstructed_fit_rows": 88,
+      "AD_reference_fingerprints": 79,
+      "missing_or_rejected_structures": 9,
+      "unique_preprocessed_structures": 79,
+      "threshold": 0.12692411247914911,
+      "density_median": 0.1975223161253097
+    },
+    "DART_AEID605": {
+      "assay": "NVS_ENZ_rMAOBC",
+      "labeled_rows": 131,
+      "reconstructed_fit_rows": 104,
+      "AD_reference_fingerprints": 102,
+      "missing_or_rejected_structures": 2,
+      "unique_preprocessed_structures": 101,
+      "threshold": 0.13316200716845877,
+      "density_median": 0.23629819406431102
+    },
+    "DART_AEID607": {
+      "assay": "NVS_ENZ_rMAOBP",
+      "labeled_rows": 134,
+      "reconstructed_fit_rows": 107,
+      "AD_reference_fingerprints": 102,
+      "missing_or_rejected_structures": 5,
+      "unique_preprocessed_structures": 102,
+      "threshold": 0.12742094854837072,
+      "density_median": 0.2048744255407121
+    },
+    "DART_AEID597": {
+      "assay": "NVS_ENZ_rCOMT",
+      "labeled_rows": 63,
+      "reconstructed_fit_rows": 50,
+      "AD_reference_fingerprints": 47,
+      "missing_or_rejected_structures": 3,
+      "unique_preprocessed_structures": 46,
+      "threshold": 0.11192033082673815,
+      "density_median": 0.1901766812814159
+    },
+    "DART_AEID734": {
+      "assay": "NVS_TR_hSERT",
+      "labeled_rows": 107,
+      "reconstructed_fit_rows": 85,
+      "AD_reference_fingerprints": 79,
+      "missing_or_rejected_structures": 6,
+      "unique_preprocessed_structures": 79,
+      "threshold": 0.11948697473907559,
+      "density_median": 0.1893594379280948
+    },
+    "DART_AEID737": {
+      "assay": "NVS_TR_rSERT",
+      "labeled_rows": 148,
+      "reconstructed_fit_rows": 118,
+      "AD_reference_fingerprints": 113,
+      "missing_or_rejected_structures": 5,
+      "unique_preprocessed_structures": 113,
+      "threshold": 0.14592377546176294,
+      "density_median": 0.21671258785060238
+    },
+    "DART_AEID2498": {
+      "assay": "CCTE_Shafer_MEA_dev_active_electrodes_number",
+      "labeled_rows": 395,
+      "reconstructed_fit_rows": 316,
+      "AD_reference_fingerprints": 291,
+      "missing_or_rejected_structures": 25,
+      "unique_preprocessed_structures": 285,
+      "threshold": 0.14994484959820714,
+      "density_median": 0.3052780552780553
+    },
+    "DART_AEID2500": {
+      "assay": "CCTE_Shafer_MEA_dev_bursting_electrodes_number",
+      "labeled_rows": 395,
+      "reconstructed_fit_rows": 316,
+      "AD_reference_fingerprints": 291,
+      "missing_or_rejected_structures": 25,
+      "unique_preprocessed_structures": 285,
+      "threshold": 0.14994484959820714,
+      "density_median": 0.3052780552780553
+    },
+    "DART_AEID2504": {
+      "assay": "CCTE_Shafer_MEA_dev_per_burst_spike_percent",
+      "labeled_rows": 395,
+      "reconstructed_fit_rows": 316,
+      "AD_reference_fingerprints": 291,
+      "missing_or_rejected_structures": 25,
+      "unique_preprocessed_structures": 285,
+      "threshold": 0.14994484959820714,
+      "density_median": 0.3052780552780553
+    },
+    "DART_AEID2508": {
+      "assay": "CCTE_Shafer_MEA_dev_interburst_interval_mean",
+      "labeled_rows": 395,
+      "reconstructed_fit_rows": 316,
+      "AD_reference_fingerprints": 291,
+      "missing_or_rejected_structures": 25,
+      "unique_preprocessed_structures": 285,
+      "threshold": 0.14994484959820714,
+      "density_median": 0.3052780552780553
+    },
+    "DART_AEID2512": {
+      "assay": "CCTE_Shafer_MEA_dev_network_spike_peak",
+      "labeled_rows": 395,
+      "reconstructed_fit_rows": 316,
+      "AD_reference_fingerprints": 291,
+      "missing_or_rejected_structures": 25,
+      "unique_preprocessed_structures": 285,
+      "threshold": 0.14994484959820714,
+      "density_median": 0.3052780552780553
+    },
+    "DART_AEID2514": {
+      "assay": "CCTE_Shafer_MEA_dev_spike_duration_mean",
+      "labeled_rows": 395,
+      "reconstructed_fit_rows": 316,
+      "AD_reference_fingerprints": 291,
+      "missing_or_rejected_structures": 25,
+      "unique_preprocessed_structures": 285,
+      "threshold": 0.14994484959820714,
+      "density_median": 0.3052780552780553
+    },
+    "DART_AEID2516": {
+      "assay": "CCTE_Shafer_MEA_dev_network_spike_duration_std",
+      "labeled_rows": 395,
+      "reconstructed_fit_rows": 316,
+      "AD_reference_fingerprints": 291,
+      "missing_or_rejected_structures": 25,
+      "unique_preprocessed_structures": 285,
+      "threshold": 0.14994484959820714,
+      "density_median": 0.3052780552780553
+    },
+    "DART_AEID2520": {
+      "assay": "CCTE_Shafer_MEA_dev_per_network_spike_spike_number_mean",
+      "labeled_rows": 395,
+      "reconstructed_fit_rows": 316,
+      "AD_reference_fingerprints": 291,
+      "missing_or_rejected_structures": 25,
+      "unique_preprocessed_structures": 285,
+      "threshold": 0.14994484959820714,
+      "density_median": 0.3052780552780553
+    },
+    "DART_AEID2522": {
+      "assay": "CCTE_Shafer_MEA_dev_per_network_spike_spike_percent",
+      "labeled_rows": 395,
+      "reconstructed_fit_rows": 316,
+      "AD_reference_fingerprints": 291,
+      "missing_or_rejected_structures": 25,
+      "unique_preprocessed_structures": 285,
+      "threshold": 0.14994484959820714,
+      "density_median": 0.3052780552780553
+    },
+    "DART_AEID2524": {
+      "assay": "CCTE_Shafer_MEA_dev_correlation_coefficient_mean",
+      "labeled_rows": 395,
+      "reconstructed_fit_rows": 316,
+      "AD_reference_fingerprints": 291,
+      "missing_or_rejected_structures": 25,
+      "unique_preprocessed_structures": 285,
+      "threshold": 0.14994484959820714,
+      "density_median": 0.3052780552780553
+    },
+    "DART_AEID2526": {
+      "assay": "CCTE_Shafer_MEA_dev_mutual_information_norm",
+      "labeled_rows": 395,
+      "reconstructed_fit_rows": 316,
+      "AD_reference_fingerprints": 291,
+      "missing_or_rejected_structures": 25,
+      "unique_preprocessed_structures": 285,
+      "threshold": 0.14994484959820714,
+      "density_median": 0.3052780552780553
+    },
+    "DART_AEID614": {
+      "assay": "NVS_GPCR_g5HT4",
+      "labeled_rows": 141,
+      "reconstructed_fit_rows": 112,
+      "AD_reference_fingerprints": 104,
+      "missing_or_rejected_structures": 8,
+      "unique_preprocessed_structures": 104,
+      "threshold": 0.14801037381646134,
+      "density_median": 0.21241967511226867
+    },
+    "DART_AEID622": {
+      "assay": "NVS_GPCR_h5HT2A",
+      "labeled_rows": 112,
+      "reconstructed_fit_rows": 89,
+      "AD_reference_fingerprints": 82,
+      "missing_or_rejected_structures": 7,
+      "unique_preprocessed_structures": 82,
+      "threshold": 0.12092289269284348,
+      "density_median": 0.1875132637913863
+    },
+    "DART_AEID623": {
+      "assay": "NVS_GPCR_h5HT5A",
+      "labeled_rows": 162,
+      "reconstructed_fit_rows": 129,
+      "AD_reference_fingerprints": 120,
+      "missing_or_rejected_structures": 9,
+      "unique_preprocessed_structures": 119,
+      "threshold": 0.1605532787441762,
+      "density_median": 0.2274951460223963
+    },
+    "DART_AEID624": {
+      "assay": "NVS_GPCR_h5HT6",
+      "labeled_rows": 104,
+      "reconstructed_fit_rows": 83,
+      "AD_reference_fingerprints": 76,
+      "missing_or_rejected_structures": 7,
+      "unique_preprocessed_structures": 76,
+      "threshold": 0.12514840076005354,
+      "density_median": 0.20598371262552087
+    },
+    "DART_AEID625": {
+      "assay": "NVS_GPCR_h5HT7",
+      "labeled_rows": 166,
+      "reconstructed_fit_rows": 132,
+      "AD_reference_fingerprints": 120,
+      "missing_or_rejected_structures": 12,
+      "unique_preprocessed_structures": 119,
+      "threshold": 0.14188068235777201,
+      "density_median": 0.21718811689712358
+    },
+    "DART_AEID659": {
+      "assay": "NVS_GPCR_p5HT2C",
+      "labeled_rows": 113,
+      "reconstructed_fit_rows": 90,
+      "AD_reference_fingerprints": 87,
+      "missing_or_rejected_structures": 3,
+      "unique_preprocessed_structures": 87,
+      "threshold": 0.14994602791904937,
+      "density_median": 0.2239639208173691
+    },
+    "DART_AEID660": {
+      "assay": "NVS_GPCR_r5HT_NonSelective",
+      "labeled_rows": 93,
+      "reconstructed_fit_rows": 74,
+      "AD_reference_fingerprints": 69,
+      "missing_or_rejected_structures": 5,
+      "unique_preprocessed_structures": 69,
+      "threshold": 0.12717368257683487,
+      "density_median": 0.19384145353171903
+    },
+    "DART_AEID661": {
+      "assay": "NVS_GPCR_r5HT1_NonSelective",
+      "labeled_rows": 72,
+      "reconstructed_fit_rows": 57,
+      "AD_reference_fingerprints": 53,
+      "missing_or_rejected_structures": 4,
+      "unique_preprocessed_structures": 53,
+      "threshold": 0.11202129744210983,
+      "density_median": 0.19032554411427285
+    },
+    "DART_AEID319": {
+      "assay": "NVS_ADME_hCYP19A1",
+      "labeled_rows": 247,
+      "reconstructed_fit_rows": 197,
+      "AD_reference_fingerprints": 186,
+      "missing_or_rejected_structures": 11,
+      "unique_preprocessed_structures": 186,
+      "threshold": 0.14745630216795297,
+      "density_median": 0.264506494840933
+    },
+    "DART_AEID321": {
+      "assay": "NVS_ADME_hCYP1A1",
+      "labeled_rows": 180,
+      "reconstructed_fit_rows": 144,
+      "AD_reference_fingerprints": 135,
+      "missing_or_rejected_structures": 9,
+      "unique_preprocessed_structures": 134,
+      "threshold": 0.14811886804772895,
+      "density_median": 0.23617610062893082
+    },
+    "DART_AEID706": {
+      "assay": "NVS_MP_hPBR",
+      "labeled_rows": 456,
+      "reconstructed_fit_rows": 364,
+      "AD_reference_fingerprints": 337,
+      "missing_or_rejected_structures": 27,
+      "unique_preprocessed_structures": 333,
+      "threshold": 0.1801522080655695,
+      "density_median": 0.3174023328698211
+    },
+    "DART_AEID707": {
+      "assay": "NVS_MP_rPBR",
+      "labeled_rows": 441,
+      "reconstructed_fit_rows": 352,
+      "AD_reference_fingerprints": 333,
+      "missing_or_rejected_structures": 19,
+      "unique_preprocessed_structures": 331,
+      "threshold": 0.17173896728629304,
+      "density_median": 0.31996052341162484
+    },
+    "DART_AEID891": {
+      "assay": "CEETOX_H295R_11DCORT",
+      "labeled_rows": 576,
+      "reconstructed_fit_rows": 460,
+      "AD_reference_fingerprints": 449,
+      "missing_or_rejected_structures": 11,
+      "unique_preprocessed_structures": 444,
+      "threshold": 0.17067315349519152,
+      "density_median": 0.3193650907242208
+    },
+    "DART_AEID895": {
+      "assay": "CEETOX_H295R_OHPROG",
+      "labeled_rows": 576,
+      "reconstructed_fit_rows": 460,
+      "AD_reference_fingerprints": 449,
+      "missing_or_rejected_structures": 11,
+      "unique_preprocessed_structures": 444,
+      "threshold": 0.17067315349519152,
+      "density_median": 0.3193650907242208
+    },
+    "DART_AEID913": {
+      "assay": "CEETOX_H295R_PROG",
+      "labeled_rows": 576,
+      "reconstructed_fit_rows": 460,
+      "AD_reference_fingerprints": 449,
+      "missing_or_rejected_structures": 11,
+      "unique_preprocessed_structures": 444,
+      "threshold": 0.17067315349519152,
+      "density_median": 0.3193650907242208
+    },
+    "DART_AEID2143": {
+      "assay": "CEETOX_H295R_11DCORT_noMTC",
+      "labeled_rows": 84,
+      "reconstructed_fit_rows": 67,
+      "AD_reference_fingerprints": 64,
+      "missing_or_rejected_structures": 3,
+      "unique_preprocessed_structures": 64,
+      "threshold": 0.0939822627144464,
+      "density_median": 0.24370039020213236
+    },
+    "DART_AEID2145": {
+      "assay": "CEETOX_H295R_OHPREG_noMTC",
+      "labeled_rows": 84,
+      "reconstructed_fit_rows": 67,
+      "AD_reference_fingerprints": 64,
+      "missing_or_rejected_structures": 3,
+      "unique_preprocessed_structures": 64,
+      "threshold": 0.0939822627144464,
+      "density_median": 0.24370039020213236
+    },
+    "DART_AEID2147": {
+      "assay": "CEETOX_H295R_OHPROG_noMTC",
+      "labeled_rows": 84,
+      "reconstructed_fit_rows": 67,
+      "AD_reference_fingerprints": 64,
+      "missing_or_rejected_structures": 3,
+      "unique_preprocessed_structures": 64,
+      "threshold": 0.0939822627144464,
+      "density_median": 0.24370039020213236
+    },
+    "DART_AEID2149": {
+      "assay": "CEETOX_H295R_ANDR_noMTC",
+      "labeled_rows": 84,
+      "reconstructed_fit_rows": 67,
+      "AD_reference_fingerprints": 64,
+      "missing_or_rejected_structures": 3,
+      "unique_preprocessed_structures": 64,
+      "threshold": 0.0939822627144464,
+      "density_median": 0.24370039020213236
+    },
+    "DART_AEID2153": {
+      "assay": "CEETOX_H295R_CORTISOL_noMTC",
+      "labeled_rows": 84,
+      "reconstructed_fit_rows": 67,
+      "AD_reference_fingerprints": 64,
+      "missing_or_rejected_structures": 3,
+      "unique_preprocessed_structures": 64,
+      "threshold": 0.0939822627144464,
+      "density_median": 0.24370039020213236
+    },
+    "DART_AEID2157": {
+      "assay": "CEETOX_H295R_DOC_noMTC",
+      "labeled_rows": 84,
+      "reconstructed_fit_rows": 67,
+      "AD_reference_fingerprints": 64,
+      "missing_or_rejected_structures": 3,
+      "unique_preprocessed_structures": 64,
+      "threshold": 0.0939822627144464,
+      "density_median": 0.24370039020213236
+    },
+    "DART_AEID2165": {
+      "assay": "CEETOX_H295R_PROG_noMTC",
+      "labeled_rows": 84,
+      "reconstructed_fit_rows": 67,
+      "AD_reference_fingerprints": 64,
+      "missing_or_rejected_structures": 3,
+      "unique_preprocessed_structures": 64,
+      "threshold": 0.0939822627144464,
+      "density_median": 0.24370039020213236
+    },
+    "DART_AEID3078": {
+      "assay": "CCTE_Deisenroth_5AR_NBTE_ratio",
+      "labeled_rows": 228,
+      "reconstructed_fit_rows": 182,
+      "AD_reference_fingerprints": 164,
+      "missing_or_rejected_structures": 18,
+      "unique_preprocessed_structures": 163,
+      "threshold": 0.14865039186199228,
+      "density_median": 0.2466553692360144
+    },
+    "DART_AEID3161": {
+      "assay": "CCTE_Deisenroth_H295R-HTRF_384WELL_ESTRADIOL",
+      "labeled_rows": 36,
+      "reconstructed_fit_rows": 28,
+      "AD_reference_fingerprints": 28,
+      "missing_or_rejected_structures": 0,
+      "unique_preprocessed_structures": 28,
+      "threshold": 0.13559463536483032,
+      "density_median": 0.23540356344299596
+    }
+  }
+}

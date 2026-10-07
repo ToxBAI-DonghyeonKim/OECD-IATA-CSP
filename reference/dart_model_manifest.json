@@ -25,7 +25,13 @@
     "recall": 0.57,
     "precision": 0.55,
     "accuracy": 0.71,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 2877,
+    "ad_threshold": 0.23256652438631,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID610",
@@ -53,7 +59,13 @@
     "recall": 0.83,
     "precision": 0.7,
     "accuracy": 0.75,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 23,
+    "ad_threshold": 0.0866806739689175,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID443",
@@ -81,7 +93,13 @@
     "recall": 0.57,
     "precision": 0.59,
     "accuracy": 0.83,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 130,
+    "ad_threshold": 0.1278136789878354,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID1507",
@@ -109,7 +127,13 @@
     "recall": 0.84,
     "precision": 0.8,
     "accuracy": 0.76,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 551,
+    "ad_threshold": 0.18252024629142133,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID1682",
@@ -137,7 +161,13 @@
     "recall": 0.52,
     "precision": 0.52,
     "accuracy": 0.56,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 293,
+    "ad_threshold": 0.15864379448530003,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID1688",
@@ -165,7 +195,13 @@
     "recall": 0.5,
     "precision": 0.52,
     "accuracy": 0.57,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 293,
+    "ad_threshold": 0.15864379448530003,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID1690",
@@ -193,7 +229,13 @@
     "recall": 0.59,
     "precision": 0.58,
     "accuracy": 0.58,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 330,
+    "ad_threshold": 0.1598381172804848,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID3094",
@@ -221,7 +263,13 @@
     "recall": 0.79,
     "precision": 0.8,
     "accuracy": 0.76,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 49,
+    "ad_threshold": 0.11892842229808373,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID3095",
@@ -249,7 +297,13 @@
     "recall": 0.77,
     "precision": 0.77,
     "accuracy": 0.78,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 49,
+    "ad_threshold": 0.11892842229808373,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID3096",
@@ -277,7 +331,13 @@
     "recall": 0.71,
     "precision": 0.71,
     "accuracy": 0.69,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 49,
+    "ad_threshold": 0.11892842229808373,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID268",
@@ -305,7 +365,13 @@
     "recall": 0.54,
     "precision": 0.51,
     "accuracy": 0.76,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 1306,
+    "ad_threshold": 0.2041674452987909,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID274",
@@ -333,7 +399,13 @@
     "recall": 0.52,
     "precision": 0.48,
     "accuracy": 0.79,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 1306,
+    "ad_threshold": 0.2041674452987909,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID489",
@@ -361,7 +433,13 @@
     "recall": 0.78,
     "precision": 0.72,
     "accuracy": 0.72,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 64,
+    "ad_threshold": 0.09822906008883057,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID493",
@@ -389,7 +467,13 @@
     "recall": 0.57,
     "precision": 0.71,
     "accuracy": 0.77,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 80,
+    "ad_threshold": 0.11414351776365032,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID497",
@@ -417,7 +501,13 @@
     "recall": 0.63,
     "precision": 0.59,
     "accuracy": 0.57,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 171,
+    "ad_threshold": 0.14011240574387313,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2869",
@@ -445,7 +535,13 @@
     "recall": 0.55,
     "precision": 0.5,
     "accuracy": 0.86,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 131,
+    "ad_threshold": 0.27303492106224647,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID579",
@@ -473,7 +569,13 @@
     "recall": 0.5,
     "precision": 0.63,
     "accuracy": 0.83,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 66,
+    "ad_threshold": 0.10997436608649422,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID638",
@@ -501,7 +603,13 @@
     "recall": 0.63,
     "precision": 0.73,
     "accuracy": 0.72,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 31,
+    "ad_threshold": 0.0940182292240866,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID709",
@@ -529,7 +637,13 @@
     "recall": 0.6,
     "precision": 0.69,
     "accuracy": 0.75,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 148,
+    "ad_threshold": 0.1425840378840379,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2127",
@@ -557,7 +671,13 @@
     "recall": 0.69,
     "precision": 0.54,
     "accuracy": 0.77,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 5526,
+    "ad_threshold": 0.26504793409526706,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2218",
@@ -585,7 +705,13 @@
     "recall": 0.91,
     "precision": 0.79,
     "accuracy": 0.92,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 173,
+    "ad_threshold": 0.17251254378833245,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2219",
@@ -613,7 +739,13 @@
     "recall": 0.91,
     "precision": 0.68,
     "accuracy": 0.72,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 173,
+    "ad_threshold": 0.17251254378833245,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2222",
@@ -641,7 +773,13 @@
     "recall": 0.98,
     "precision": 0.83,
     "accuracy": 0.93,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 173,
+    "ad_threshold": 0.17251254378833245,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2223",
@@ -669,7 +807,13 @@
     "recall": 0.77,
     "precision": 0.71,
     "accuracy": 0.75,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 173,
+    "ad_threshold": 0.17251254378833245,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID723",
@@ -697,7 +841,13 @@
     "recall": 0.6,
     "precision": 0.56,
     "accuracy": 0.83,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 132,
+    "ad_threshold": 0.13669814967641056,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2952",
@@ -725,7 +875,13 @@
     "recall": 0.56,
     "precision": 0.48,
     "accuracy": 0.68,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 86,
+    "ad_threshold": 0.1032437386476355,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2697",
@@ -753,7 +909,13 @@
     "recall": 0.57,
     "precision": 0.69,
     "accuracy": 0.8,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 47,
+    "ad_threshold": 0.0808880057899629,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID1827",
@@ -781,7 +943,13 @@
     "recall": 0.73,
     "precision": 0.58,
     "accuracy": 0.74,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 44,
+    "ad_threshold": 0.1026285698344209,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID1829",
@@ -809,7 +977,13 @@
     "recall": 0.73,
     "precision": 0.54,
     "accuracy": 0.6,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 44,
+    "ad_threshold": 0.1026285698344209,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID1835",
@@ -837,7 +1011,13 @@
     "recall": 0.6,
     "precision": 0.43,
     "accuracy": 0.73,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 44,
+    "ad_threshold": 0.1026285698344209,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2545",
@@ -865,7 +1045,13 @@
     "recall": 0.6,
     "precision": 0.75,
     "accuracy": 0.8,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 46,
+    "ad_threshold": 0.08410010129888551,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2701",
@@ -893,7 +1079,13 @@
     "recall": 0.55,
     "precision": 0.64,
     "accuracy": 0.53,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 50,
+    "ad_threshold": 0.10060362248412517,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2779",
@@ -921,7 +1113,13 @@
     "recall": 0.45,
     "precision": 0.57,
     "accuracy": 0.72,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 123,
+    "ad_threshold": 0.10991762834397652,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2784",
@@ -949,7 +1147,13 @@
     "recall": 0.58,
     "precision": 0.51,
     "accuracy": 0.69,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 123,
+    "ad_threshold": 0.10991762834397652,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2790",
@@ -977,7 +1181,13 @@
     "recall": 0.64,
     "precision": 0.57,
     "accuracy": 0.69,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 56,
+    "ad_threshold": 0.09767899610356572,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2791",
@@ -1005,7 +1215,13 @@
     "recall": 0.65,
     "precision": 0.55,
     "accuracy": 0.71,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 58,
+    "ad_threshold": 0.10308022178554806,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2792",
@@ -1033,7 +1249,13 @@
     "recall": 0.67,
     "precision": 0.53,
     "accuracy": 0.74,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 58,
+    "ad_threshold": 0.10308022178554806,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID3167",
@@ -1061,7 +1283,13 @@
     "recall": 0.6,
     "precision": 0.63,
     "accuracy": 0.59,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 21,
+    "ad_threshold": 0.2263860277653381,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2782",
@@ -1089,7 +1317,13 @@
     "recall": 0.65,
     "precision": 0.57,
     "accuracy": 0.9,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 123,
+    "ad_threshold": 0.10991762834397652,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2786",
@@ -1117,7 +1351,13 @@
     "recall": 0.59,
     "precision": 0.56,
     "accuracy": 0.73,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 123,
+    "ad_threshold": 0.10991762834397652,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2788",
@@ -1145,7 +1385,13 @@
     "recall": 0.64,
     "precision": 0.56,
     "accuracy": 0.73,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 123,
+    "ad_threshold": 0.10991762834397652,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2793",
@@ -1173,7 +1419,13 @@
     "recall": 0.49,
     "precision": 0.62,
     "accuracy": 0.85,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 172,
+    "ad_threshold": 0.1340422668736727,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2529",
@@ -1201,7 +1453,13 @@
     "recall": 0.67,
     "precision": 0.58,
     "accuracy": 0.67,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 291,
+    "ad_threshold": 0.14994484959820714,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2530",
@@ -1229,7 +1487,13 @@
     "recall": 0.56,
     "precision": 0.5,
     "accuracy": 0.67,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 291,
+    "ad_threshold": 0.14994484959820714,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2547",
@@ -1257,7 +1521,13 @@
     "recall": 0.67,
     "precision": 0.73,
     "accuracy": 0.8,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 46,
+    "ad_threshold": 0.08410010129888551,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2699",
@@ -1285,7 +1555,13 @@
     "recall": 0.53,
     "precision": 0.5,
     "accuracy": 0.72,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 47,
+    "ad_threshold": 0.0808880057899629,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID674",
@@ -1313,7 +1589,13 @@
     "recall": 0.73,
     "precision": 0.57,
     "accuracy": 0.71,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 20,
+    "ad_threshold": 0.09120729815357399,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID601",
@@ -1341,7 +1623,13 @@
     "recall": 0.81,
     "precision": 0.81,
     "accuracy": 0.73,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 147,
+    "ad_threshold": 0.15111409220894678,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID603",
@@ -1369,7 +1657,13 @@
     "recall": 0.77,
     "precision": 0.66,
     "accuracy": 0.67,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 79,
+    "ad_threshold": 0.12692411247914911,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID605",
@@ -1397,7 +1691,13 @@
     "recall": 0.69,
     "precision": 0.59,
     "accuracy": 0.68,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 102,
+    "ad_threshold": 0.13316200716845877,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID607",
@@ -1425,7 +1725,13 @@
     "recall": 0.63,
     "precision": 0.54,
     "accuracy": 0.68,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 102,
+    "ad_threshold": 0.12742094854837072,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID597",
@@ -1453,7 +1759,13 @@
     "recall": 0.53,
     "precision": 0.85,
     "accuracy": 0.82,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 47,
+    "ad_threshold": 0.11192033082673815,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID734",
@@ -1481,7 +1793,13 @@
     "recall": 0.92,
     "precision": 0.45,
     "accuracy": 0.63,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 79,
+    "ad_threshold": 0.11948697473907559,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID737",
@@ -1509,7 +1827,13 @@
     "recall": 0.66,
     "precision": 0.68,
     "accuracy": 0.63,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 113,
+    "ad_threshold": 0.14592377546176294,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2498",
@@ -1537,7 +1861,13 @@
     "recall": 0.67,
     "precision": 0.66,
     "accuracy": 0.7,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 291,
+    "ad_threshold": 0.14994484959820714,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2500",
@@ -1565,7 +1895,13 @@
     "recall": 0.73,
     "precision": 0.63,
     "accuracy": 0.71,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 291,
+    "ad_threshold": 0.14994484959820714,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2504",
@@ -1593,7 +1929,13 @@
     "recall": 0.62,
     "precision": 0.61,
     "accuracy": 0.72,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 291,
+    "ad_threshold": 0.14994484959820714,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2508",
@@ -1621,7 +1963,13 @@
     "recall": 0.58,
     "precision": 0.55,
     "accuracy": 0.78,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 291,
+    "ad_threshold": 0.14994484959820714,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2512",
@@ -1649,7 +1997,13 @@
     "recall": 0.71,
     "precision": 0.65,
     "accuracy": 0.7,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 291,
+    "ad_threshold": 0.14994484959820714,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2514",
@@ -1677,7 +2031,13 @@
     "recall": 0.7,
     "precision": 0.66,
     "accuracy": 0.74,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 291,
+    "ad_threshold": 0.14994484959820714,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2516",
@@ -1705,7 +2065,13 @@
     "recall": 0.54,
     "precision": 0.49,
     "accuracy": 0.76,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 291,
+    "ad_threshold": 0.14994484959820714,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2520",
@@ -1733,7 +2099,13 @@
     "recall": 0.64,
     "precision": 0.55,
     "accuracy": 0.67,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 291,
+    "ad_threshold": 0.14994484959820714,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2522",
@@ -1761,7 +2133,13 @@
     "recall": 0.72,
     "precision": 0.62,
     "accuracy": 0.74,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 291,
+    "ad_threshold": 0.14994484959820714,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2524",
@@ -1789,7 +2167,13 @@
     "recall": 0.66,
     "precision": 0.66,
     "accuracy": 0.74,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 291,
+    "ad_threshold": 0.14994484959820714,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2526",
@@ -1817,7 +2201,13 @@
     "recall": 0.56,
     "precision": 0.63,
     "accuracy": 0.75,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 291,
+    "ad_threshold": 0.14994484959820714,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID614",
@@ -1845,7 +2235,13 @@
     "recall": 0.72,
     "precision": 0.74,
     "accuracy": 0.68,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 104,
+    "ad_threshold": 0.14801037381646134,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID622",
@@ -1873,7 +2269,13 @@
     "recall": 0.85,
     "precision": 0.77,
     "accuracy": 0.83,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 82,
+    "ad_threshold": 0.12092289269284348,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID623",
@@ -1901,7 +2303,13 @@
     "recall": 0.69,
     "precision": 0.63,
     "accuracy": 0.64,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 120,
+    "ad_threshold": 0.1605532787441762,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID624",
@@ -1929,7 +2337,13 @@
     "recall": 0.84,
     "precision": 0.65,
     "accuracy": 0.61,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 76,
+    "ad_threshold": 0.12514840076005354,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID625",
@@ -1957,7 +2371,13 @@
     "recall": 0.78,
     "precision": 0.67,
     "accuracy": 0.62,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 120,
+    "ad_threshold": 0.14188068235777201,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID659",
@@ -1985,7 +2405,13 @@
     "recall": 0.87,
     "precision": 0.74,
     "accuracy": 0.74,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 87,
+    "ad_threshold": 0.14994602791904937,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID660",
@@ -2013,7 +2439,13 @@
     "recall": 0.69,
     "precision": 0.65,
     "accuracy": 0.7,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 69,
+    "ad_threshold": 0.12717368257683487,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID661",
@@ -2041,7 +2473,13 @@
     "recall": 0.5,
     "precision": 0.7,
     "accuracy": 0.79,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 53,
+    "ad_threshold": 0.11202129744210983,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID319",
@@ -2069,7 +2507,13 @@
     "recall": 0.56,
     "precision": 0.47,
     "accuracy": 0.74,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 186,
+    "ad_threshold": 0.14745630216795297,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID321",
@@ -2097,7 +2541,13 @@
     "recall": 0.82,
     "precision": 0.58,
     "accuracy": 0.7,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 135,
+    "ad_threshold": 0.14811886804772895,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID706",
@@ -2125,7 +2575,13 @@
     "recall": 0.74,
     "precision": 0.64,
     "accuracy": 0.59,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 337,
+    "ad_threshold": 0.1801522080655695,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID707",
@@ -2153,7 +2609,13 @@
     "recall": 0.91,
     "precision": 0.61,
     "accuracy": 0.62,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 333,
+    "ad_threshold": 0.17173896728629304,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID891",
@@ -2181,7 +2643,13 @@
     "recall": 0.62,
     "precision": 0.56,
     "accuracy": 0.74,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 449,
+    "ad_threshold": 0.17067315349519152,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID895",
@@ -2209,7 +2677,13 @@
     "recall": 0.97,
     "precision": 0.5,
     "accuracy": 0.58,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 449,
+    "ad_threshold": 0.17067315349519152,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID913",
@@ -2237,7 +2711,13 @@
     "recall": 0.58,
     "precision": 0.49,
     "accuracy": 0.6,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 449,
+    "ad_threshold": 0.17067315349519152,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2143",
@@ -2265,7 +2745,13 @@
     "recall": 0.55,
     "precision": 0.69,
     "accuracy": 0.79,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 64,
+    "ad_threshold": 0.0939822627144464,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2145",
@@ -2293,7 +2779,13 @@
     "recall": 0.6,
     "precision": 0.5,
     "accuracy": 0.77,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 64,
+    "ad_threshold": 0.0939822627144464,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2147",
@@ -2321,7 +2813,13 @@
     "recall": 0.73,
     "precision": 0.51,
     "accuracy": 0.61,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 64,
+    "ad_threshold": 0.0939822627144464,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2149",
@@ -2349,7 +2847,13 @@
     "recall": 0.63,
     "precision": 0.49,
     "accuracy": 0.7,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 64,
+    "ad_threshold": 0.0939822627144464,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2153",
@@ -2377,7 +2881,13 @@
     "recall": 0.52,
     "precision": 0.53,
     "accuracy": 0.7,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 64,
+    "ad_threshold": 0.0939822627144464,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2157",
@@ -2405,7 +2915,13 @@
     "recall": 0.67,
     "precision": 0.49,
     "accuracy": 0.62,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 64,
+    "ad_threshold": 0.0939822627144464,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID2165",
@@ -2433,7 +2949,13 @@
     "recall": 0.63,
     "precision": 0.47,
     "accuracy": 0.65,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 64,
+    "ad_threshold": 0.0939822627144464,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID3078",
@@ -2461,7 +2983,13 @@
     "recall": 0.73,
     "precision": 0.76,
     "accuracy": 0.76,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 164,
+    "ad_threshold": 0.14865039186199228,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   },
   {
     "endpoint_code": "DART_AEID3161",
@@ -2489,6 +3017,12 @@
     "recall": 0.53,
     "precision": 0.6,
     "accuracy": 0.61,
-    "ad_status": "Not supplied in source model artifacts; raw prediction only"
+    "ad_status": "Assessed with unified core24 AD procedure",
+    "tier": "General DART mechanism",
+    "artifact_kind": "sklearn_estimator",
+    "ad_reference_n": 28,
+    "ad_threshold": 0.13559463536483032,
+    "ad_method": "Morgan radius 2, 2048-bit query Tmax; threshold is 5th percentile of mean top-5 training-neighbor Tanimoto",
+    "ad_reference_basis": "Reconstructed model-fit reference using frozen core24 ToxCast lineage"
   }
 ]
