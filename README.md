@@ -36,17 +36,6 @@ python predict_24.py --smiles "CCO" -o prediction.xlsx
 
 The original model settings and weights are preserved. JSON/native XGBoost exports retain the established portable deployment formats.
 
-## Confirmed final Hershberger selection
-
-- Pattern fingerprint + Logistic Regression.
-- C = 50; L1 penalty; liblinear solver.
-- Classification threshold: **0.0100**.
-- Selection criterion: maximize specificity subject to sensitivity ≥ 0.80 using 10 × 5 repeated out-of-fold predictions.
-- Recorded repeated-OOF metrics: sensitivity 0.800, specificity 0.416, F1 0.528, ROC-AUC 0.699.
-- The earlier proposed threshold 0.44 was not adopted as the final threshold.
-
-These metrics are historical internal-validation results, not a new evaluation performed for this repository.
-
 ## Applicability domain
 
 The recorded common AD procedure uses standardized Morgan fingerprints (radius 2, 2,048 bits). For each endpoint, the fifth percentile of the training chemicals' mean top-five-neighbor Tanimoto similarities defines its threshold. A query is In Domain when its maximum similarity to that endpoint's training reference is at least the threshold.
