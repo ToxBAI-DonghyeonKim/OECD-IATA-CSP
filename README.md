@@ -1,55 +1,16 @@
-# OECD IATA CSP — ToxBAI final model collection
+# OECD IATA CSP — 113 models
 
-This repository organizes the final model artifacts selected in the OECD IATA case-study work on consumer product chemicals: ER/AR activity and developmental and reproductive toxicity (DART) potential.
+[Download the 113-model ZIP](ToxBAI_113model_prediction_bundle.zip). See [89-model catalog](docs/DART_MODEL_CATALOG.md) and [24-model catalog](docs/MODEL_CATALOG.md).
 
-## Model scope
+24 core models + 89 General DART mechanism assay models. Core artifacts are preserved from the 2026-08-27 bundle. The 89 models are selected by AEID, assay, fingerprint and algorithm from the agreed DART AOP 89-assay list and ChemBAI's ToxCast_model(F1) directory.
 
-| Tier | Endpoints | Count |
-|---|---|---:|
-| Tier 1 | ER assays (ER01–ER12), AR assays (AR01–AR07) | 19 |
-| Tier 2 | Uterotrophic agonist (T2_UTERO), Hershberger antagonist (T2_HERSH) | 2 |
-| Tier 3 | TG 414, TG 416, TG 421 | 3 |
-| **Total** | | **24** |
-
-“Final” refers to the selected inference artifacts in the case-study workflow. It does not imply OECD approval.
-
-## Download and run
-
-[Download the complete 24-model inference package](ToxBAI_24model_prediction_bundle_2026-08-27.zip).
-
-The ZIP includes all 24 model artifacts, inference code, AD reference structures, original manifest and checksums. Extract it before running:
-
-```bash
-unzip ToxBAI_24model_prediction_bundle_2026-08-27.zip
-cd ToxBAI_24model_prediction_bundle_2026-08-27
+```sh
 python -m pip install -r requirements.txt
-python predict_24.py input_template.csv -o predictions.xlsx
+python predict_113.py input_template.csv -o predictions_113.xlsx
 ```
 
-Prepare input with `ID` and `SMILES` columns. CSV, XLSX and JSON are supported by the original script. Output includes predicted classes, positive probabilities and endpoint-specific AD scores/flags.
+The core24 sheets retain their existing applicability-domain assessment. DART raw labels and probabilities are stored separately in `DART Prediction`, `DART Probability`, and `DART Detail`. **The 89 source artifacts do not supply AD reference structures/cutoffs. Their raw labels must not be presented as AD-filtered evidence or used to reproduce the final CSP grouping without the original AD data.**
 
-For a single SMILES:
+`model_manifest_113.json` lists all models. `dart_model_manifest.json` records each source path, pinned commit, Git blob SHA, SHA256, feature size and listed performance. No retraining was performed. The original 24-model method audit and AD references are retained.
 
-```bash
-python predict_24.py --smiles "CCO" -o prediction.xlsx
-```
-
-The original model settings and weights are preserved. JSON/native XGBoost exports retain the established portable deployment formats.
-
-## Applicability domain
-
-The recorded common AD procedure uses standardized Morgan fingerprints (radius 2, 2,048 bits). For each endpoint, the fifth percentile of the training chemicals' mean top-five-neighbor Tanimoto similarities defines its threshold. A query is In Domain when its maximum similarity to that endpoint's training reference is at least the threshold.
-
-The AD decision accompanies the prediction; it does not replace or alter the predicted class. Exact structure preprocessing and endpoint thresholds must be read from the recovered inference code and manifest.
-
-## Interpretation
-
-The Tier 3 outputs follow their training-label definitions. They do not establish an endocrine mechanism or directly predict every endocrine-related observation. In particular, the recorded TG416 positive label is high concern defined by LEL < 1,000 mg/kg bw/day; a negative prediction does not mean absence of reproductive toxicity.
-
-The later IATA decision tree integrates apical and mechanistic evidence. It is a separate evidence-integration layer; the 24 endpoint predictions alone are not the complete Group 1–5 classification algorithm.
-
-## Documentation
-
-- [Full model catalog](docs/MODEL_CATALOG.md)
-- [Artifact inventory](docs/ARTIFACT_INVENTORY.md)
-- [Selection provenance and verification](docs/PROVENANCE.md)
+Source: https://github.com/Jiinwon/ChemBAI/tree/656171a39b6caf5e57afcaf0acdbd082c3622e70 . Third-party model rights remain with the original authors; no new license is asserted. This collection is a CSP working model package, not a statement of OECD approval.
