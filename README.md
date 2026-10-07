@@ -53,5 +53,3 @@ The later IATA decision tree integrates apical and mechanistic evidence. It is a
 - [Full model catalog](docs/MODEL_CATALOG.md)
 - [Artifact inventory](docs/ARTIFACT_INVENTORY.md)
 - [Selection provenance and verification](docs/PROVENANCE.md)
-
-Prepared from the user's prior conversations on 7 October 2026.
